@@ -569,14 +569,20 @@ export default function HomePage() {
                 }}
               >
                 <div
-                  style={{
-                    fontSize: 23,
-                    color: colors.blue,
-                    marginBottom: 20,
-                  }}
-                >
-                  <feature.icon />
-                </div>
+  style={{
+    width: 48,
+    height: 48,
+    background: "#EAF1F7",
+    borderRadius: 10,
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    color: "#8FAFCD",
+    marginBottom: 20,
+  }}
+>
+  <feature.icon size={23} strokeWidth={1.8} />
+</div>
                 <h3 style={{ fontSize: 17, marginBottom: 12 }}>
                   {feature.title}
                 </h3>
@@ -621,7 +627,31 @@ export default function HomePage() {
               margin: "35px auto 0",
             }}
           >
-            <strong style={{ fontSize: 15 }}>✦ AI 발주 제안</strong>
+            <div
+  style={{
+    display: "flex",
+    alignItems: "center",
+    gap: 10,
+  }}
+>
+  <span
+    style={{
+      width: 40,
+      height: 40,
+      background: "#EAF1F7",
+      borderRadius: 10,
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      color: "#8FAFCD",
+      fontSize: 20,
+      flexShrink: 0,
+    }}
+  >
+    ✦
+  </span>
+  <strong style={{ fontSize: 15 }}>AI 발주 제안</strong>
+</div>
             <p
               style={{
                 fontSize: 12,
